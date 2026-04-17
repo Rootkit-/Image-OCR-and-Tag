@@ -1,0 +1,13 @@
+# PyTorch GPU Dependencies
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.11.0+cu130
+torchvision==0.26.0+cu130
+
+# General Dependencies
+numpy
+opencv-python
+easyocr
+Pillow
+timm
+pywin32
+huggingface-hub

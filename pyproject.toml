@@ -1,0 +1,30 @@
+[project]
+name = "Image_OCR_Tag"
+version = "0.1.0"
+description = "Auto Images tags."
+requires-python = ">=3.12"
+dependencies = [
+	"huggingface-hub",
+    "torch==2.11.0+cu130",
+    "torchvision==0.26.0+cu130",
+    "numpy",
+    "opencv-python",
+    "easyocr",
+    "Pillow",
+    "timm",
+    "pywin32",
+    "huggingface-hub>=1.11.0",
+]
+
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+
+[tool.uv]
+package = false
